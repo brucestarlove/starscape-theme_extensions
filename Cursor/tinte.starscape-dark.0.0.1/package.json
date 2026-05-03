@@ -1,0 +1,40 @@
+{
+	"name": "starscape-dark",
+	"displayName": "Starscape Dark",
+	"publisher": "Tinte",
+	"version": "0.0.1",
+	"description": "Starscape Dark theme generated with Tinte - beautiful semantic colors for VS Code",
+	"icon": "icon.svg",
+	"engines": {
+		"vscode": "^1.70.0"
+	},
+	"categories": [
+		"Themes"
+	],
+	"keywords": [
+		"theme",
+		"color-theme",
+		"tinte",
+		"generated",
+		"dark"
+	],
+	"homepage": "https://tinte.dev",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/Railly/tinte"
+	},
+	"contributes": {
+		"themes": [
+			{
+				"label": "Starscape Dark (Dark)",
+				"uiTheme": "vs-dark",
+				"path": "./themes/theme.json"
+			}
+		]
+	},
+	"__metadata": {
+		"installedTimestamp": 1765616383012,
+		"targetPlatform": "undefined",
+		"size": 19204
+	}
+}
