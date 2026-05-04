@@ -1,0 +1,154 @@
+/* ============================================================
+   Starscape palette overrides for the Things theme.
+   Appended after upstream/theme.css by build.sh — same selectors
+   as upstream so the cascade picks these up.
+
+   Palette source: starscape_dark.json (Zed). Light palette is
+   designed for true white backgrounds (Zed's light variant is a
+   lighter-dark, not suitable for Obsidian theme-light).
+   ============================================================ */
+
+/* Shared accent palette — Things uses these for h-colors, strong, em, quote, etc. */
+body {
+  /* Accent hue tuned to Starscape purple #a855f7 ≈ hsl(271, 91%, 65%) */
+  --accent-h: 271;
+  --accent-s: 91%;
+  --accent-d: 65%; /* dark mode */
+  --accent-l: 55%; /* light mode (darkened for contrast on white) */
+
+  /* Things' named colors, remapped to Starscape */
+  --blue: #06b6d4;   /* cyan */
+  --pink: #ec4899;
+  --green: #eab308;  /* gold — Starscape uses gold where Things uses green */
+  --yellow: #eab308;
+  --orange: #ec4899; /* no orange in Starscape; reuse pink */
+  --red: #ec4899;
+  --purple: #a855f7;
+
+  /* Heading colors — keep h1/h2 as text-normal (Things default), restyle the rest */
+  --h3-color: #a855f7; /* purple */
+  --h4-color: #06b6d4; /* cyan */
+  --h5-color: #eab308; /* gold */
+  --h6-color: var(--text-muted);
+
+  --strong-color: #a855f7;
+  --em-color: #06b6d4;
+  --quote-color: #eab308;
+
+  /* Tag pills — purple on dark, light purple on light */
+  --tag-background-color-l: #ede0fc;
+  --tag-font-color-l: #6b21a8;
+  --tag-background-color-d: #3b1d63;
+  --tag-font-color-d: #e9d5ff;
+
+  /* Code block backgrounds */
+  --code-background-l: #eef0f6;
+  --code-background-d: #10182e;
+  --code-block-background-l: #f4f5fa;
+  --code-block-background-d: #0d142a;
+}
+
+/* ===================== Dark — Starscape ===================== */
+.theme-dark,
+body.theme-dark.is-mobile {
+  --color-red-rgb: 236, 72, 153;
+  --color-red: #ec4899;
+  --color-green-rgb: 234, 179, 8;
+  --color-green: #eab308;
+  --color-orange: #ec4899;
+  --color-yellow: #eab308;
+  --color-cyan: #06b6d4;
+  --color-blue: #06b6d4;
+  --color-purple: #a855f7;
+  --color-pink: #ec4899;
+
+  /* Surfaces — deep navy ladder from starscape_dark.json */
+  --color-base-00: #0a1121; /* main editor */
+  --color-base-05: #0d142a;
+  --color-base-10: #10182e; /* code blocks, surfaces */
+  --color-base-20: #0a1121; /* unfocused nav */
+  --color-base-25: #1a2240;
+  --color-base-30: #232946; /* dividers */
+  --color-base-35: #2d3459;
+  --color-base-40: #373d5b;
+  --color-base-50: #70799b; /* faint text */
+  --color-base-60: #8a92b3;
+  --color-base-70: #a1a6c5; /* muted text */
+  --color-base-100: #e5edff; /* normal text */
+
+  --titlebar-background: #0a1121;
+  --titlebar-background-focused: #10182e;
+
+  /* Highlights — subtle gold wash, pink active */
+  --text-highlight-bg-d: rgba(234, 179, 8, 0.28);
+  --text-highlight-bg: var(--text-highlight-bg-d);
+  --text-highlight-bg-active: rgba(236, 72, 153, 0.32);
+
+  /* Atom syntax — remap to Starscape */
+  --atom-gray-1: #70799b;
+  --atom-gray-2: #a1a6c5;
+  --atom-red: #ec4899;
+  --atom-orange: #ec4899;
+  --atom-green: #eab308;
+  --atom-aqua: #06b6d4;
+  --atom-purple: #a855f7;
+  --atom-blue: #06b6d4;
+  --atom-yellow: #eab308;
+}
+
+/* ===================== Light — Starscape ===================== */
+/* Cool off-white backgrounds, deep navy text, accents darkened for AA contrast. */
+.theme-light,
+body.theme-light.is-mobile {
+  --color-red-rgb: 219, 39, 119;
+  --color-red: #db2777;
+  --color-green-rgb: 161, 98, 7;
+  --color-green: #a16207;
+  --color-orange: #db2777;
+  --color-yellow: #a16207;
+  --color-cyan: #0891b2;
+  --color-blue: #0891b2;
+  --color-purple: #9333ea;
+  --color-pink: #db2777;
+
+  --color-base-00: #fafbfd; /* main editor */
+  --color-base-05: #f4f6fb;
+  --color-base-10: #eef0f6; /* code blocks */
+  --color-base-20: #eef0f6;
+  --color-base-25: #e3e7f0;
+  --color-base-30: #d8dce8; /* dividers */
+  --color-base-35: #c4c9d8;
+  --color-base-40: #a8aec3;
+  --color-base-50: #8a90ab;
+  --color-base-60: #6b7290;
+  --color-base-70: #4a5070;
+  --color-base-100: #0a1121; /* normal text */
+
+  --titlebar-background: #eef0f6;
+  --titlebar-background-focused: #e3e7f0;
+
+  --text-highlight-bg-l: rgba(161, 98, 7, 0.22);
+  --text-highlight-bg: var(--text-highlight-bg-l);
+  --text-highlight-bg-active: rgba(219, 39, 119, 0.28);
+
+  /* Atom syntax — light variants of the accents */
+  --atom-gray-1: #4a5070;
+  --atom-gray-2: #4a5070;
+  --atom-red: #db2777;
+  --atom-orange: #b45309;
+  --atom-green: #a16207;
+  --atom-aqua: #0891b2;
+  --atom-purple: #9333ea;
+  --atom-blue: #0891b2;
+  --atom-yellow: #a16207;
+}
+
+/* Light-mode heading/strong/em recolors — accent-l (darkened) versions */
+.theme-light {
+  --h3-color: #9333ea;
+  --h4-color: #0891b2;
+  --h5-color: #a16207;
+  --strong-color: #9333ea;
+  --em-color: #0891b2;
+  --quote-color: #a16207;
+}
