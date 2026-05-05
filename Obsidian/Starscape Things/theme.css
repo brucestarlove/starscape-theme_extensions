@@ -2034,61 +2034,73 @@ body.theme-dark.is-mobile {
   --atom-yellow: #eab308;
 }
 
-/* ===================== Light — Starscape ===================== */
-/* Cool off-white backgrounds, deep navy text, accents darkened for AA contrast. */
+/* ===================== Light — Earth Village ===================== */
+/* Parchment cream surfaces, deep sepia text, botanical-journal accents:
+   forest green primary, terracotta, honey ochre, berry. Inspired by
+   Earth Village concept art (sage greens, aged paper, warm naturals). */
 .theme-light,
 body.theme-light.is-mobile {
-  --color-red-rgb: 219, 39, 119;
-  --color-red: #db2777;
-  --color-green-rgb: 161, 98, 7;
-  --color-green: #a16207;
-  --color-orange: #db2777;
-  --color-yellow: #a16207;
-  --color-cyan: #0891b2;
-  --color-blue: #0891b2;
-  --color-purple: #9333ea;
-  --color-pink: #db2777;
+  --color-red-rgb: 139, 58, 58;
+  --color-red: #8b3a3a;       /* berry */
+  --color-green-rgb: 79, 112, 72;
+  --color-green: #4f7048;     /* forest */
+  --color-orange: #a0563a;    /* terracotta */
+  --color-yellow: #b8893d;    /* honey ochre */
+  --color-cyan: #587a64;      /* sage teal */
+  --color-blue: #4f7048;      /* reuse forest — there's no real blue in Earth */
+  --color-purple: #4f7048;    /* primary accent */
+  --color-pink: #a0563a;
 
-  --color-base-00: #fafbfd; /* main editor */
-  --color-base-05: #f4f6fb;
-  --color-base-10: #eef0f6; /* code blocks */
-  --color-base-20: #eef0f6;
-  --color-base-25: #e3e7f0;
-  --color-base-30: #d8dce8; /* dividers */
-  --color-base-35: #c4c9d8;
-  --color-base-40: #a8aec3;
-  --color-base-50: #8a90ab;
-  --color-base-60: #6b7290;
-  --color-base-70: #4a5070;
-  --color-base-100: #0a1121; /* normal text */
+  /* Parchment ladder — warm cream → tan */
+  --color-base-00: #f5ecd6; /* main editor (parchment cream) */
+  --color-base-05: #efe4c8;
+  --color-base-10: #e8d9b4; /* code blocks (kraft paper) */
+  --color-base-20: #f0e5c9;
+  --color-base-25: #e3d4ad;
+  --color-base-30: #d4c194; /* dividers */
+  --color-base-35: #c0aa7a;
+  --color-base-40: #9c8a64;
+  --color-base-50: #7a6c4f; /* faint */
+  --color-base-60: #5c5240;
+  --color-base-70: #463e2f; /* muted */
+  --color-base-100: #2b2415; /* normal text — sepia brown-black */
 
-  --titlebar-background: #eef0f6;
-  --titlebar-background-focused: #e3e7f0;
+  --titlebar-background: #efe4c8;
+  --titlebar-background-focused: #e3d4ad;
 
-  --text-highlight-bg-l: rgba(161, 98, 7, 0.22);
+  /* Highlights — honey wash, terracotta active (like a watercolor mark) */
+  --text-highlight-bg-l: rgba(184, 137, 61, 0.28);
   --text-highlight-bg: var(--text-highlight-bg-l);
-  --text-highlight-bg-active: rgba(219, 39, 119, 0.28);
+  --text-highlight-bg-active: rgba(160, 86, 58, 0.32);
 
-  /* Atom syntax — light variants of the accents */
-  --atom-gray-1: #4a5070;
-  --atom-gray-2: #4a5070;
-  --atom-red: #db2777;
-  --atom-orange: #b45309;
-  --atom-green: #a16207;
-  --atom-aqua: #0891b2;
-  --atom-purple: #9333ea;
-  --atom-blue: #0891b2;
-  --atom-yellow: #a16207;
+  /* Tag pills — sage on cream */
+  --tag-background-color-l: #d8e0c8;
+  --tag-font-color-l: #3d5230;
+
+  /* Code block backgrounds — slightly darker kraft */
+  --code-background-l: #e8d9b4;
+  --code-block-background-l: #ede0bf;
+
+  /* Atom syntax — earth palette */
+  --atom-gray-1: #7a6c4f;
+  --atom-gray-2: #463e2f;
+  --atom-red: #8b3a3a;
+  --atom-orange: #a0563a;
+  --atom-green: #4f7048;
+  --atom-aqua: #587a64;
+  --atom-purple: #6b4a8a;     /* dusty plum — for variety in syntax */
+  --atom-blue: #587a64;
+  --atom-yellow: #b8893d;
 }
 
-/* Light-mode heading/strong/em recolors — accent-l (darkened) versions */
+/* Light-mode heading/strong/em — botanical accents */
 .theme-light {
-  --h3-color: #0891b2; /* cyan */
-  --h4-color: #9333ea; /* purple */
-  --h5-color: #a16207;
-  --strong-color: #0891b2; /* cyan — bold */
-  --em-color: #9333ea;     /* purple — italic */
-  --quote-color: #a16207;
+  --h3-color: #4f7048;       /* forest green */
+  --h4-color: #a0563a;       /* terracotta */
+  --h5-color: #b8893d;       /* honey */
+  --strong-color: #4f7048;   /* forest — bold */
+  --em-color: #a0563a;       /* terracotta — italic */
+  --quote-color: #b8893d;    /* honey */
 }
 
 /* ============================================================
@@ -2106,11 +2118,48 @@ body.theme-light.is-mobile {
 }
 
 .theme-light {
-  --orbit-surface:   rgba(250, 251, 253, 1);
-  --orbit-surface-2: rgba(238, 240, 246, 1);
-  --orbit-grid:      rgba(29, 37, 40, 0.08);
-  --orbit-accent:    rgba(147, 51, 234, 0.18);
-  --orbit-accent-2:  rgba(8, 145, 178, 0.14);
+  /* Earth Village palette — parchment + tea stains + sage/ochre washes */
+  --earth-paper-1:    rgba(245, 236, 214, 1);    /* cream */
+  --earth-paper-2:    rgba(232, 217, 180, 1);    /* tan */
+  --earth-vignette:   rgba(124, 96, 56, 0.12);   /* warm corner shadow */
+  --earth-stain-sage: rgba(79, 112, 72, 0.22);   /* forest wash (bumped) */
+  --earth-stain-ochre:rgba(184, 137, 61, 0.20);  /* honey wash (bumped) */
+
+  /* === Hand-placed botanical illustrations (no-repeat, corner-anchored) ===
+     Each is a separate SVG. Center of the note stays clean — these only
+     decorate top/bottom edges. Placeholders; replace with handcrafted SVGs. */
+
+  /* Top-left: trailing vine with leaves (180×140) */
+  --earth-vine-tl: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 180 140'><g stroke='%234f7048' fill='%234f7048' stroke-linecap='round'><path d='M28 0 Q40 28 22 56 Q10 86 32 118' stroke-width='1.3' fill='none' opacity='0.5'/><ellipse cx='40' cy='14' rx='7' ry='3' transform='rotate(-50 40 14)' opacity='0.42'/><ellipse cx='25' cy='38' rx='8' ry='3.2' transform='rotate(40 25 38)' opacity='0.44'/><ellipse cx='38' cy='52' rx='7' ry='3' transform='rotate(-30 38 52)' opacity='0.4'/><ellipse cx='14' cy='76' rx='8' ry='3.2' transform='rotate(60 14 76)' opacity='0.44'/><ellipse cx='28' cy='98' rx='7' ry='3' transform='rotate(-20 28 98)' opacity='0.42'/><ellipse cx='44' cy='118' rx='8' ry='3.2' transform='rotate(35 44 118)' opacity='0.42'/></g></svg>");
+
+  /* Top-right: pinnate fern frond (140×180) */
+  --earth-fern-tr: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 140 180'><g stroke='%234f7048' fill='%234f7048' stroke-linecap='round'><path d='M70 175 Q73 100 68 20' stroke-width='1.2' fill='none' opacity='0.5'/><ellipse cx='62' cy='35' rx='10' ry='2.6' transform='rotate(20 62 35)' opacity='0.36'/><ellipse cx='78' cy='32' rx='10' ry='2.6' transform='rotate(-20 78 32)' opacity='0.36'/><ellipse cx='58' cy='60' rx='12' ry='3' transform='rotate(15 58 60)' opacity='0.4'/><ellipse cx='82' cy='58' rx='12' ry='3' transform='rotate(-15 82 58)' opacity='0.4'/><ellipse cx='55' cy='90' rx='14' ry='3.4' transform='rotate(10 55 90)' opacity='0.42'/><ellipse cx='85' cy='88' rx='14' ry='3.4' transform='rotate(-10 85 88)' opacity='0.42'/><ellipse cx='52' cy='120' rx='15' ry='3.6' transform='rotate(5 52 120)' opacity='0.42'/><ellipse cx='88' cy='118' rx='15' ry='3.6' transform='rotate(-5 88 118)' opacity='0.42'/><ellipse cx='52' cy='150' rx='14' ry='3.4' transform='rotate(0 52 150)' opacity='0.4'/><ellipse cx='88' cy='150' rx='14' ry='3.4' transform='rotate(0 88 150)' opacity='0.4'/></g></svg>");
+
+  /* Bottom-left: small mushroom + grass tufts (160×120) */
+  --earth-mush-bl: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 160 120'><g stroke-linecap='round'><path d='M40 70 Q50 48 70 48 Q90 48 100 70 Z' fill='%23a0563a' opacity='0.42'/><circle cx='55' cy='62' r='2.6' fill='%23f5ecd6' opacity='0.7'/><circle cx='75' cy='56' r='3.2' fill='%23f5ecd6' opacity='0.7'/><circle cx='90' cy='65' r='2.2' fill='%23f5ecd6' opacity='0.7'/><rect x='62' y='70' width='16' height='30' rx='4' fill='%23ede0bf' opacity='0.6' stroke='%234a3820' stroke-opacity='0.32' stroke-width='0.6'/><path d='M20 110 Q22 88 26 100' stroke='%234f7048' stroke-width='1.3' fill='none' opacity='0.5'/><path d='M30 110 Q34 84 38 96' stroke='%234f7048' stroke-width='1.3' fill='none' opacity='0.5'/><path d='M115 105 Q118 86 124 99' stroke='%234f7048' stroke-width='1.3' fill='none' opacity='0.5'/><path d='M130 110 Q132 90 138 102' stroke='%234f7048' stroke-width='1.3' fill='none' opacity='0.5'/><path d='M145 108 Q146 86 150 95' stroke='%234f7048' stroke-width='1.3' fill='none' opacity='0.5'/></g></svg>");
+
+  /* Bottom-right: flower stem with bud and leaves (140×180) */
+  --earth-flwr-br: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 140 180'><g stroke-linecap='round'><path d='M70 178 Q73 130 68 80 Q65 50 75 28' stroke='%234f7048' stroke-width='1.4' fill='none' opacity='0.52'/><ellipse cx='75' cy='24' rx='6' ry='9' fill='%23a0563a' opacity='0.5'/><ellipse cx='75' cy='20' rx='4' ry='6' fill='%23b8893d' opacity='0.55'/><ellipse cx='62' cy='100' rx='9' ry='3.2' transform='rotate(40 62 100)' fill='%234f7048' opacity='0.42'/><ellipse cx='78' cy='128' rx='9' ry='3.2' transform='rotate(-30 78 128)' fill='%234f7048' opacity='0.42'/><ellipse cx='60' cy='150' rx='10' ry='3.4' transform='rotate(45 60 150)' fill='%234f7048' opacity='0.42'/></g></svg>");
+
+  /* Margin scatter — smaller elements for the page sides */
+
+  /* Single drooping leaf with vein (40×50) */
+  --earth-leaf: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 50'><path d='M5 6 Q20 0 35 9 Q30 30 16 45 Q5 30 5 6 Z' fill='%234f7048' opacity='0.4'/><path d='M10 12 Q20 26 28 38' stroke='%234a3820' stroke-width='0.7' fill='none' opacity='0.45' stroke-linecap='round'/></svg>");
+
+  /* Acorn — terracotta nut + walnut cap (40×50) */
+  --earth-acorn: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 50'><ellipse cx='20' cy='30' rx='10' ry='13' fill='%23a0563a' opacity='0.5'/><path d='M9 19 Q20 9 31 19 L31 23 Q20 15 9 23 Z' fill='%234a3820' opacity='0.55'/><line x1='20' y1='9' x2='20' y2='3' stroke='%234a3820' stroke-width='1' opacity='0.5' stroke-linecap='round'/><ellipse cx='17' cy='27' rx='1.5' ry='2' fill='%23ede0bf' opacity='0.55'/></svg>");
+
+  /* Small five-petal flower with leaves (52×62) */
+  --earth-bloom: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 52 62'><line x1='26' y1='30' x2='26' y2='60' stroke='%234f7048' stroke-width='1.2' opacity='0.5' stroke-linecap='round'/><ellipse cx='15' cy='42' rx='6' ry='2.2' transform='rotate(-30 15 42)' fill='%234f7048' opacity='0.42'/><ellipse cx='37' cy='50' rx='6' ry='2.2' transform='rotate(40 37 50)' fill='%234f7048' opacity='0.42'/><ellipse cx='26' cy='18' rx='4' ry='8' fill='%23b8893d' opacity='0.5'/><ellipse cx='26' cy='18' rx='4' ry='8' transform='rotate(72 26 18)' fill='%23b8893d' opacity='0.5'/><ellipse cx='26' cy='18' rx='4' ry='8' transform='rotate(144 26 18)' fill='%23b8893d' opacity='0.5'/><ellipse cx='26' cy='18' rx='4' ry='8' transform='rotate(216 26 18)' fill='%23b8893d' opacity='0.5'/><ellipse cx='26' cy='18' rx='4' ry='8' transform='rotate(288 26 18)' fill='%23b8893d' opacity='0.5'/><circle cx='26' cy='18' r='3' fill='%23a0563a' opacity='0.75'/></svg>");
+
+  /* Berry sprig — three berries on a small stem (60×60) */
+  --earth-berry: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 60 60'><path d='M50 5 Q40 26 33 48' stroke='%234f7048' stroke-width='1' fill='none' opacity='0.5' stroke-linecap='round'/><ellipse cx='42' cy='20' rx='6' ry='2.4' transform='rotate(-30 42 20)' fill='%234f7048' opacity='0.42'/><ellipse cx='35' cy='38' rx='5' ry='2' transform='rotate(40 35 38)' fill='%234f7048' opacity='0.4'/><circle cx='30' cy='42' r='4' fill='%238b3a3a' opacity='0.62'/><circle cx='39' cy='46' r='3.5' fill='%23a0563a' opacity='0.58'/><circle cx='33' cy='52' r='3.8' fill='%238b3a3a' opacity='0.58'/><circle cx='28' cy='40' r='1' fill='%23ede0bf' opacity='0.6'/></svg>");
+
+  /* Curling tendril — single elegant curl (60×80) */
+  --earth-curl: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 60 80'><path d='M30 2 Q36 26 22 36 Q4 46 30 60 Q54 70 36 78' stroke='%234f7048' stroke-width='1.2' fill='none' opacity='0.5' stroke-linecap='round'/></svg>");
+
+  /* Grass tuft — five blades of varying height (60×40) */
+  --earth-grass: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 60 40'><g stroke='%234f7048' fill='none' stroke-linecap='round'><path d='M10 38 Q12 18 16 30' stroke-width='1.2' opacity='0.5'/><path d='M20 38 Q24 14 28 28' stroke-width='1.3' opacity='0.5'/><path d='M30 38 Q34 10 38 26' stroke-width='1.3' opacity='0.52'/><path d='M40 38 Q44 14 48 28' stroke-width='1.2' opacity='0.5'/><path d='M48 38 Q50 18 54 30' stroke-width='1.1' opacity='0.48'/></g></svg>");
 }
 
 /* Dark — Orbit washes + surface, NO grid (stars carry the texture). */
@@ -2125,20 +2174,58 @@ body.theme-light.is-mobile {
   background-attachment: local;
 }
 
-/* Light — grid above surface so it's actually visible. 12×12 squares;
-   we don't try to align rules to text baselines (CSS gradients can't
-   respond to per-element line-heights, so the result looks like graph
-   paper, not ruled paper). */
+/* Light — Earth Village background: 4 corner illustrations + 6 margin-scatter
+   elements (sprinkled along the sides) + tea-stain washes + corner vignettes
+   + parchment. No tiling. Side elements use absolute pixel offsets from top
+   so they appear as you read down the start of the note. */
 .theme-light .markdown-source-view.mod-cm6 .cm-editor,
 .theme-light .markdown-source-view.mod-cm6 .cm-scroller,
 .theme-light .markdown-preview-view,
 .theme-light .workspace-leaf-content[data-type="markdown"] .view-content {
-  background:
-    repeating-linear-gradient(0deg,  transparent, transparent 11px, var(--orbit-grid) 11px, var(--orbit-grid) 12px),
-    repeating-linear-gradient(90deg, transparent, transparent 11px, var(--orbit-grid) 11px, var(--orbit-grid) 12px),
-    radial-gradient(ellipse 80% 50% at 50% 0%, var(--orbit-accent), transparent 55%),
-    radial-gradient(circle at 100% 100%, var(--orbit-accent-2), transparent 45%),
-    linear-gradient(165deg, var(--orbit-surface) 0%, var(--orbit-surface-2) 100%);
+  background-image:
+    var(--earth-vine-tl),
+    var(--earth-fern-tr),
+    var(--earth-mush-bl),
+    var(--earth-flwr-br),
+    var(--earth-leaf),     /* L margin */
+    var(--earth-berry),    /* R margin */
+    var(--earth-curl),     /* L margin */
+    var(--earth-acorn),    /* R margin */
+    var(--earth-bloom),    /* L margin */
+    var(--earth-grass),    /* R margin */
+    radial-gradient(ellipse 70% 50% at 8% 6%,   var(--earth-stain-sage),  transparent 60%),
+    radial-gradient(ellipse 60% 55% at 95% 95%, var(--earth-stain-ochre), transparent 60%),
+    radial-gradient(ellipse 50% 40% at 0% 100%, var(--earth-vignette),    transparent 70%),
+    radial-gradient(ellipse 45% 35% at 100% 0%, var(--earth-vignette),    transparent 70%),
+    linear-gradient(165deg, var(--earth-paper-1) 0%, var(--earth-paper-2) 100%);
+  background-position:
+    left 16px top 12px,       /* vine top-left */
+    right 16px top 16px,      /* fern top-right */
+    left 16px bottom 16px,    /* mushroom bottom-left */
+    right 16px bottom 16px,   /* flower bottom-right */
+    18px 220px,               /* leaf — left margin */
+    right 24px top 200px,     /* berry — right margin */
+    14px 380px,               /* curl — left margin */
+    right 28px top 340px,     /* acorn — right margin */
+    24px 540px,               /* bloom — left margin */
+    right 18px top 520px,     /* grass — right margin */
+    0 0, 0 0, 0 0, 0 0, 0 0;
+  background-size:
+    180px 140px,
+    140px 180px,
+    160px 120px,
+    140px 180px,
+    40px 50px,
+    60px 60px,
+    60px 80px,
+    40px 50px,
+    52px 62px,
+    60px 40px,
+    auto, auto, auto, auto, auto;
+  background-repeat:
+    no-repeat, no-repeat, no-repeat, no-repeat,
+    no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat,
+    no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
   background-attachment: local;
 }
 
