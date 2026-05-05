@@ -36,8 +36,8 @@ The [Style Settings](https://github.com/mgmeyers/obsidian-style-settings) plugin
 
 ## Light vs dark
 
-- **Dark mode** uses the full Starscape palette from `starscape_dark.json`.
-- **Light mode** uses a true white-background palette (Zed's "Starscape Light" is actually a lighter-dark variant, unsuitable for Obsidian's `theme-light`). The light palette here is an experiment that may later be propagated to the Cursor/Zed extensions.
+- **Dark mode** is a pulsing starry night sky, using the full Starscape palette from `starscape_dark.json`.
+- **Light mode** is grid paper, using a true white-background palette (Zed's "Starscape Light" is actually a lighter-dark variant, unsuitable for Obsidian's `theme-light`). The light palette here is an experiment that may later be propagated to the Cursor/Zed extensions.
 
 ## License
 
