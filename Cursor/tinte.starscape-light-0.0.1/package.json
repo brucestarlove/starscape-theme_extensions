@@ -26,8 +26,8 @@
 	"contributes": {
 		"themes": [
 			{
-				"label": "Starscape Light (Dark)",
-				"uiTheme": "vs-dark",
+				"label": "Starscape Light",
+				"uiTheme": "vs",
 				"path": "./themes/theme.json"
 			}
 		]
