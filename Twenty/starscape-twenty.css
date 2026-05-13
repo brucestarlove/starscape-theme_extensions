@@ -1,0 +1,164 @@
+/* Starscape Dark for Twenty CRM */
+.dark {
+  --t-background-noisy: #0a1121;
+  --t-buttons-secondary-text-color: #67e8f9;
+
+  /* Accent — cyan scale replacing indigo */
+  --t-accent-primary: #155e75;
+  --t-accent-secondary: #155e75;
+  --t-accent-tertiary: #0f3446;
+  --t-accent-quaternary: #0b2a39;
+  --t-accent-accent3570: #0891b2;
+  --t-accent-accent4060: #0891b2;
+  --t-accent-accent1: #050e14;
+  --t-accent-accent2: #071722;
+  --t-accent-accent3: #0b2a39;
+  --t-accent-accent4: #0f3446;
+  --t-accent-accent5: #155e75;
+  --t-accent-accent6: #0e7490;
+  --t-accent-accent7: #0891b2;
+  --t-accent-accent8: #0891b2;
+  --t-accent-accent9: #06b6d4;
+  --t-accent-accent10: #38d1eb;
+  --t-accent-accent11: #67e8f9;
+  --t-accent-accent12: #cffafe;
+
+  /* Backgrounds — deep navy replacing neutral gray */
+  --t-background-primary: #0a1121;
+  --t-background-secondary: #10182e;
+  --t-background-tertiary: #16213e;
+  --t-background-quaternary: #232946;
+  --t-background-inverted-primary: #e5edff;
+  --t-background-inverted-secondary: #a1a6c5;
+  --t-background-primary-inverted: #e5edff;
+  --t-background-primary-inverted-hover: #a1a6c5;
+  --t-background-transparent-primary: rgba(10, 17, 33, 0.5);
+  --t-background-transparent-secondary: rgba(10, 17, 33, 0.4);
+  --t-background-transparent-strong: rgba(229, 237, 255, 0.14);
+  --t-background-transparent-medium: rgba(229, 237, 255, 0.10);
+  --t-background-transparent-light: rgba(229, 237, 255, 0.06);
+  --t-background-transparent-lighter: rgba(229, 237, 255, 0.03);
+  --t-background-overlay-primary: rgba(2, 6, 23, 0.76);
+  --t-background-overlay-secondary: rgba(2, 6, 23, 0.40);
+  --t-background-overlay-tertiary: rgba(2, 6, 23, 0.40);
+  --t-background-radial-gradient: radial-gradient(
+    50% 62.62% at 50% 0%,
+    #18213a 0%,
+    #16213e 100%
+  );
+  --t-background-radial-gradient-hover: radial-gradient(
+    76.32% 95.59% at 50% 0%,
+    #16213e 0%,
+    #232946 100%
+  );
+
+  /* Borders */
+  --t-border-color-strong: #2d3459;
+  --t-border-color-medium: #232946;
+  --t-border-color-light: #18213a;
+  --t-border-color-inverted: #e5edff;
+  --t-border-color-secondary-inverted: #a1a6c5;
+  --t-border-color-blue: #0891b2;
+  --t-border-color-transparent-strong: rgba(229, 237, 255, 0.07);
+
+  /* Typography */
+  --t-font-color-primary: #e5edff;
+  --t-font-color-secondary: #a1a6c5;
+  --t-font-color-tertiary: #70799b;
+  --t-font-color-light: #4a5380;
+  --t-font-color-extra-light: #2d3459;
+  --t-font-color-inverted: #0a1121;
+}
+
+/* Starscape Light for Twenty CRM */
+.light {
+  --t-background-noisy: #f5ecd6;
+  --t-buttons-secondary-text-color: #4f7048;
+
+  /* Accent — forest green scale replacing indigo */
+  --t-accent-primary: #c1d0b9;
+  --t-accent-secondary: #c1d0b9;
+  --t-accent-tertiary: #dae4d5;
+  --t-accent-quaternary: #eef4eb;
+  --t-accent-accent3570: #7d9b70;
+  --t-accent-accent4060: #7d9b70;
+  --t-accent-accent1: #f8faf7;
+  --t-accent-accent2: #eef4eb;
+  --t-accent-accent3: #dae4d5;
+  --t-accent-accent4: #c1d0b9;
+  --t-accent-accent5: #a9bc9f;
+  --t-accent-accent6: #91aa85;
+  --t-accent-accent7: #7d9b70;
+  --t-accent-accent8: #6b8a5e;
+  --t-accent-accent9: #4f7048;
+  --t-accent-accent10: #45633f;
+  --t-accent-accent11: #3c5637;
+  --t-accent-accent12: #2e4329;
+
+  /* Backgrounds — parchment replacing white/gray */
+  --t-background-primary: #f5ecd6;
+  --t-background-secondary: #efe4c8;
+  --t-background-tertiary: #e3d4ad;
+  --t-background-quaternary: #d4c194;
+  --t-background-inverted-primary: #2b2415;
+  --t-background-inverted-secondary: #7a6c4f;
+  --t-background-primary-inverted: #2b2415;
+  --t-background-primary-inverted-hover: #7a6c4f;
+  --t-background-transparent-primary: rgba(245, 236, 214, 0.5);
+  --t-background-transparent-secondary: rgba(245, 236, 214, 0.4);
+  --t-background-transparent-strong: rgba(43, 36, 21, 0.16);
+  --t-background-transparent-medium: rgba(43, 36, 21, 0.08);
+  --t-background-transparent-light: rgba(43, 36, 21, 0.04);
+  --t-background-transparent-lighter: rgba(43, 36, 21, 0.02);
+  --t-background-overlay-primary: rgba(43, 36, 21, 0.72);
+  --t-background-overlay-secondary: rgba(43, 36, 21, 0.36);
+  --t-background-overlay-tertiary: rgba(43, 36, 21, 0.07);
+  --t-background-radial-gradient: radial-gradient(
+    50% 62.62% at 50% 0%,
+    #efe4c8 0%,
+    #e3d4ad 100%
+  );
+  --t-background-radial-gradient-hover: radial-gradient(
+    76.32% 95.59% at 50% 0%,
+    #e3d4ad 0%,
+    #d4c194 100%
+  );
+
+  /* Borders */
+  --t-border-color-strong: #c5ad79;
+  --t-border-color-medium: #d4c194;
+  --t-border-color-light: #e3d4ad;
+  --t-border-color-inverted: #2b2415;
+  --t-border-color-secondary-inverted: #7a6c4f;
+  --t-border-color-blue: #7d9b70;
+  --t-border-color-transparent-strong: rgba(43, 36, 21, 0.07);
+
+  /* Typography */
+  --t-font-color-primary: #2b2415;
+  --t-font-color-secondary: #463e2f;
+  --t-font-color-tertiary: #7a6c4f;
+  --t-font-color-light: #9c8a64;
+  --t-font-color-extra-light: #c5ad79;
+  --t-font-color-inverted: #f5ecd6;
+}
+
+/*
+ * Inline code — BlockNote rich-text editor and markdown renderer.
+ *
+ * Twenty lazily injects these component stylesheets after this file, so the
+ * selectors below use html.dark/html.light as an extra ancestor to gain one
+ * specificity class over the component rule and win regardless of load order.
+ */
+html.dark .bn-inline-content code,
+html.dark .syk4duc :not(pre) > code {
+  background-color: var(--t-background-tertiary);
+  border-color: var(--t-border-color-medium);
+  color: var(--t-accent-accent11);
+}
+
+html.light .bn-inline-content code,
+html.light .syk4duc :not(pre) > code {
+  background-color: var(--t-background-tertiary);
+  border-color: var(--t-border-color-medium);
+  color: var(--t-accent-accent9);
+}

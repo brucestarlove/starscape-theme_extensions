@@ -1,9 +1,29 @@
 # Starscape Theme Extensions
 
-Earth-palette and starry-night color themes for Cursor, Zed, Obsidian, and Forgejo.
+Earth-palette and starry-night color themes for Cursor, Zed, Obsidian, Forgejo, and Twenty CRM.
 
 - **Starscape Light** — parchment cream background, sepia text, forest/terracotta/honey accents
 - **Starscape Dark** — deep navy background, soft blue-white text, cyan/purple/gold accents
+
+---
+
+## Twenty CRM
+
+The Twenty theme lives in `Twenty/` and includes its own [README](Twenty/README.md).
+
+Overrides Twenty's `--t-*` CSS custom properties with Starscape colours. No rebuild required — works against the pre-built Docker image.
+
+### Install with the helper script
+
+```bash
+# Docker (running container)
+./Twenty/install.sh docker:twenty-server-1
+
+# Local / self-hosted
+./Twenty/install.sh /path/to/twenty-server/dist/front
+```
+
+Hard-refresh the browser after installing. Theme preference is set per-user in **Settings → Appearance**.
 
 ---
 
