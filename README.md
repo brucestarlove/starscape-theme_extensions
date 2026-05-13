@@ -1,9 +1,42 @@
 # Starscape Theme Extensions
 
-Earth-palette and starry-night color themes for Cursor, Zed, and Obsidian.
+Earth-palette and starry-night color themes for Cursor, Zed, Obsidian, and Forgejo.
 
 - **Starscape Light** — parchment cream background, sepia text, forest/terracotta/honey accents
 - **Starscape Dark** — deep navy background, soft blue-white text, cyan/purple/gold accents
+
+---
+
+## Forgejo
+
+The Forgejo theme lives in `Forgejo/` and includes its own [README](Forgejo/README.md).
+
+Includes `theme-starscape-dark.css`, `theme-starscape-light.css`, an animated starfield script, a custom footer template, and a helper installer.
+
+### Install with the helper script
+
+```bash
+./Forgejo/install.sh /path/to/forgejo/custom
+```
+
+For a Docker container named `forgejo` with `/data` mounted on the host:
+
+```bash
+./Forgejo/install.sh /path/to/host/data/gitea
+docker compose restart forgejo
+```
+
+### Configure
+
+Add the themes to `[ui]` in `app.ini`:
+
+```ini
+[ui]
+THEMES = forgejo-auto,forgejo-light,forgejo-dark,starscape-dark,starscape-light
+DEFAULT_THEME = starscape-dark
+```
+
+Restart Forgejo after changing `app.ini`. Users can then select either theme from their appearance settings.
 
 ---
 
