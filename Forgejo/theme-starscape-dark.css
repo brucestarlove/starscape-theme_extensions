@@ -1,0 +1,347 @@
+/* Starscape Dark for Forgejo 12.
+   Adapted from Starscape editor themes and starscape-ui-system-v3 tokens. */
+
+.chroma .bp { color: #eab308; }
+.chroma .c,
+.chroma .c1,
+.chroma .ch,
+.chroma .cm,
+.chroma .go { color: #70799b; font-style: italic; }
+.chroma .cp,
+.chroma .kd,
+.chroma .kn,
+.chroma .kr,
+.chroma .k,
+.chroma .o,
+.chroma .ow,
+.chroma .nt,
+.chroma .ne { color: #a855f7; }
+.chroma .dl,
+.chroma .il,
+.chroma .kc,
+.chroma .m,
+.chroma .mb,
+.chroma .mf,
+.chroma .mh,
+.chroma .mi,
+.chroma .mo,
+.chroma .no { color: #ec4899; }
+.chroma .na,
+.chroma .nb,
+.chroma .nc,
+.chroma .nf,
+.chroma .ni,
+.chroma .nd { color: #06b6d4; }
+.chroma .s,
+.chroma .s1,
+.chroma .s2,
+.chroma .sb,
+.chroma .sd,
+.chroma .sh,
+.chroma .sr { color: #eab308; }
+.chroma .p { color: #a1a6c5; }
+.chroma .n,
+.chroma .nn,
+.chroma .nx,
+.chroma .nv { color: #e5edff; }
+.chroma .gd { color: #e5edff; background-color: #4a005a; }
+.chroma .gi { color: #e5edff; background-color: #5a4a00; }
+.chroma .gh,
+.chroma .gu { color: #38d1eb; }
+.chroma .gr,
+.chroma .gt { color: #ec4899; }
+
+.markup [src$="#gh-light-mode-only"],
+.markup [src$="#light-mode-only"],
+.markup [href$="#gh-light-mode-only"],
+.markup [href$="#light-mode-only"] { display: none; }
+.markup [src$="#gh-dark-mode-only"],
+.markup [src$="#dark-mode-only"],
+.markup [href$="#gh-dark-mode-only"],
+.markup [href$="#dark-mode-only"] { display: unset; }
+
+:root {
+  --starscape-bg: #0a1121;
+  --starscape-bg-2: #10182e;
+  --starscape-bg-3: #16213e;
+  --starscape-surface: #10182e;
+  --starscape-surface-2: #18213a;
+  --starscape-surface-3: #232946;
+  --starscape-border: #2d3459;
+  --starscape-text: #e5edff;
+  --starscape-muted: #a1a6c5;
+  --starscape-faint: #70799b;
+  --starscape-cyan: #06b6d4;
+  --starscape-cyan-bright: #38d1eb;
+  --starscape-violet: #a855f7;
+  --starscape-violet-bright: #c084fc;
+  --starscape-gold: #eab308;
+  --starscape-pink: #ec4899;
+
+  --is-dark-theme: true;
+  --color-primary: var(--starscape-cyan);
+  --color-primary-contrast: #041018;
+  --color-primary-dark-1: var(--starscape-cyan-bright);
+  --color-primary-dark-2: #67e8f9;
+  --color-primary-dark-3: #a5f3fc;
+  --color-primary-dark-4: #cffafe;
+  --color-primary-dark-5: #ecfeff;
+  --color-primary-dark-6: #f0fdff;
+  --color-primary-dark-7: #ffffff;
+  --color-primary-light-1: #0891b2;
+  --color-primary-light-2: #0e7490;
+  --color-primary-light-3: #155e75;
+  --color-primary-light-4: #164e63;
+  --color-primary-light-5: #123f52;
+  --color-primary-light-6: #0f3446;
+  --color-primary-light-7: #0b2a39;
+  --color-primary-alpha-10: #06b6d419;
+  --color-primary-alpha-20: #06b6d433;
+  --color-primary-alpha-30: #06b6d44d;
+  --color-primary-alpha-40: #06b6d466;
+  --color-primary-alpha-50: #06b6d480;
+  --color-primary-alpha-60: #06b6d499;
+  --color-primary-alpha-70: #06b6d4b3;
+  --color-primary-alpha-80: #06b6d4cc;
+  --color-primary-alpha-90: #06b6d4e6;
+  --color-primary-hover: var(--starscape-cyan-bright);
+  --color-primary-active: #67e8f9;
+
+  --color-secondary: var(--starscape-surface-3);
+  --color-secondary-dark-1: #384069;
+  --color-secondary-dark-2: #46507b;
+  --color-secondary-dark-3: #59618e;
+  --color-secondary-dark-4: #70799b;
+  --color-secondary-dark-5: #8990ad;
+  --color-secondary-dark-6: #a1a6c5;
+  --color-secondary-dark-7: #bcc4dd;
+  --color-secondary-dark-8: #d6def4;
+  --color-secondary-dark-9: #e5edff;
+  --color-secondary-dark-10: #f8faff;
+  --color-secondary-dark-11: #f8faff;
+  --color-secondary-dark-12: #f8faff;
+  --color-secondary-dark-13: #f8faff;
+  --color-secondary-light-1: #2d3459;
+  --color-secondary-light-2: #232946;
+  --color-secondary-light-3: #18213a;
+  --color-secondary-light-4: #10182e;
+  --color-secondary-alpha-10: #23294619;
+  --color-secondary-alpha-20: #23294633;
+  --color-secondary-alpha-30: #2329464d;
+  --color-secondary-alpha-40: #23294666;
+  --color-secondary-alpha-50: #23294680;
+  --color-secondary-alpha-60: #23294699;
+  --color-secondary-alpha-70: #232946b3;
+  --color-secondary-alpha-80: #232946cc;
+  --color-secondary-alpha-90: #232946e6;
+  --color-secondary-hover: var(--color-secondary-light-1);
+  --color-secondary-active: var(--color-secondary-light-2);
+
+  --color-red: var(--starscape-pink);
+  --color-orange: var(--starscape-violet);
+  --color-yellow: var(--starscape-gold);
+  --color-olive: #d9c63d;
+  --color-green: var(--starscape-gold);
+  --color-teal: var(--starscape-cyan);
+  --color-blue: var(--starscape-cyan);
+  --color-violet: #7c3aed;
+  --color-purple: var(--starscape-violet);
+  --color-pink: var(--starscape-pink);
+  --color-brown: #92700a;
+  --color-grey: var(--starscape-faint);
+  --color-black: var(--starscape-bg);
+  --color-red-light: #f472b6;
+  --color-orange-light: var(--starscape-violet-bright);
+  --color-yellow-light: #fbbf24;
+  --color-green-light: #fbbf24;
+  --color-teal-light: var(--starscape-cyan-bright);
+  --color-blue-light: var(--starscape-cyan-bright);
+  --color-violet-light: var(--starscape-violet-bright);
+  --color-purple-light: var(--starscape-violet-bright);
+  --color-pink-light: #f472b6;
+
+  --color-body: var(--starscape-bg);
+  --color-box-header: var(--starscape-surface-2);
+  --color-box-body: var(--starscape-surface);
+  --color-box-body-highlight: var(--starscape-surface-3);
+  --color-text-dark: #ffffff;
+  --color-text: var(--starscape-text);
+  --color-text-light: var(--starscape-muted);
+  --color-text-light-1: var(--starscape-muted);
+  --color-text-light-2: #bcc4dd;
+  --color-text-light-3: var(--starscape-faint);
+  --color-footer: #070d1a;
+  --color-timeline: var(--starscape-border);
+  --color-input-text: var(--starscape-text);
+  --color-input-background: #0f172a;
+  --color-input-toggle-background: var(--starscape-surface-3);
+  --color-input-border: var(--starscape-border);
+  --color-input-border-hover: var(--starscape-cyan);
+  --color-header-wrapper: rgba(10, 17, 33, 0.96);
+  --color-header-wrapper-transparent: rgba(10, 17, 33, 0);
+  --color-light: rgba(229, 237, 255, 0.1);
+  --color-light-mimic-enabled: rgba(229, 237, 255, calc(18 / 255 / var(--opacity-disabled)));
+  --color-light-border: rgba(229, 237, 255, 0.14);
+  --color-hover: #202849;
+  --color-active: #2d3459;
+  --color-menu: var(--starscape-surface-2);
+  --color-card: rgba(16, 24, 46, 0.92);
+  --fancy-card-bg: rgba(35, 41, 70, 0.75);
+  --fancy-card-border: rgba(6, 182, 212, 0.16);
+  --color-markup-table-row: rgba(229, 237, 255, 0.035);
+  --color-markup-code-block: #0d1529;
+  --color-markup-code-inline: #111a31;
+  --color-button: #25305a;
+  --color-code-bg: #111a31;
+  --color-shadow: rgba(0, 0, 0, 0.48);
+  --color-secondary-bg: var(--starscape-surface-2);
+  --color-text-focus: #ffffff;
+  --color-expand-button: #28325c;
+  --color-placeholder-text: var(--starscape-faint);
+  --color-editor-line-highlight: rgba(16, 24, 46, 0.75);
+  --color-project-board-bg: #0d1529;
+  --color-project-board-dark-label: var(--starscape-faint);
+  --color-caret: var(--starscape-cyan);
+  --color-reaction-bg: rgba(229, 237, 255, 0.07);
+  --color-reaction-active-bg: rgba(6, 182, 212, 0.25);
+  --color-reaction-hover-bg: rgba(6, 182, 212, 0.34);
+  --color-tooltip-text: #ffffff;
+  --color-tooltip-bg: rgba(5, 10, 22, 0.96);
+  --color-nav-bg: #070d1a;
+  --color-nav-hover-bg: #202849;
+  --color-nav-text: var(--starscape-text);
+  --color-secondary-nav-bg: var(--starscape-bg);
+  --color-label-text: #ffffff;
+  --color-label-bg: #2d3459;
+  --color-label-hover-bg: #384069;
+  --color-label-active-bg: #46507b;
+  --color-label-bg-alt: #384069;
+  --color-accent: var(--starscape-cyan);
+  --color-small-accent: var(--starscape-violet);
+  --color-highlight-fg: var(--starscape-cyan-bright);
+  --color-highlight-bg: rgba(6, 182, 212, 0.16);
+  --color-overlay-backdrop: rgba(2, 6, 23, 0.76);
+  --checkerboard-color-1: #18213a;
+  --checkerboard-color-2: #10182e;
+
+  --color-console-fg: var(--starscape-text);
+  --color-console-fg-subtle: var(--starscape-muted);
+  --color-console-bg: #070d1a;
+  --color-console-border: var(--starscape-border);
+  --color-console-hover-bg: rgba(229, 237, 255, 0.08);
+  --color-console-active-bg: #25305a;
+  --color-console-menu-bg: var(--starscape-surface-2);
+  --color-console-menu-border: var(--starscape-border);
+
+  --color-diff-removed-word-bg: #4a005a;
+  --color-diff-added-word-bg: #5a4a00;
+  --color-diff-removed-row-bg: rgba(168, 85, 247, 0.12);
+  --color-diff-moved-row-bg: rgba(6, 182, 212, 0.12);
+  --color-diff-added-row-bg: rgba(234, 179, 8, 0.12);
+  --color-diff-removed-row-border: #4a005a;
+  --color-diff-moved-row-border: #004a5a;
+  --color-diff-added-row-border: #5a4a00;
+  --color-diff-inactive: #384069;
+  --color-error-border: #5a0033;
+  --color-error-bg: rgba(236, 72, 153, 0.16);
+  --color-error-bg-active: rgba(236, 72, 153, 0.24);
+  --color-error-bg-hover: rgba(236, 72, 153, 0.2);
+  --color-error-text: #fce7f3;
+  --color-success-border: #5a4a00;
+  --color-success-bg: rgba(234, 179, 8, 0.16);
+  --color-success-text: #fef3c7;
+  --color-warning-border: #5a4a00;
+  --color-warning-bg: rgba(234, 179, 8, 0.16);
+  --color-warning-text: #fde68a;
+  --color-info-border: #004a5a;
+  --color-info-bg: rgba(6, 182, 212, 0.14);
+  --color-info-text: #cffafe;
+  --color-red-badge: var(--starscape-pink);
+  --color-red-badge-bg: #ec489922;
+  --color-red-badge-hover-bg: #ec489944;
+  --color-green-badge: var(--starscape-gold);
+  --color-green-badge-bg: #eab30822;
+  --color-green-badge-hover-bg: #eab30844;
+  --color-yellow-badge: var(--starscape-gold);
+  --color-yellow-badge-bg: #eab30822;
+  --color-yellow-badge-hover-bg: #eab30844;
+  --color-orange-badge: var(--starscape-violet);
+  --color-orange-badge-bg: #a855f722;
+  --color-orange-badge-hover-bg: #a855f744;
+  --color-icon-green: var(--starscape-gold);
+  --color-icon-red: var(--starscape-pink);
+  --color-icon-purple: var(--starscape-violet-bright);
+  --color-ansi-black: #0a1121;
+  --color-ansi-red: #a855f7;
+  --color-ansi-green: #eab308;
+  --color-ansi-yellow: #06b6d4;
+  --color-ansi-blue: #a855f7;
+  --color-ansi-magenta: #ec4899;
+  --color-ansi-cyan: #eab308;
+  --color-ansi-white: #e5edff;
+  --color-ansi-bright-black: #70799b;
+  --color-ansi-bright-red: #c084fc;
+  --color-ansi-bright-green: #fbbf24;
+  --color-ansi-bright-yellow: #38d1eb;
+  --color-ansi-bright-blue: #c084fc;
+  --color-ansi-bright-magenta: #f472b6;
+  --color-ansi-bright-cyan: #fbbf24;
+  --color-ansi-bright-white: #f8faff;
+  --color-white: #ffffff;
+  --color-pure-black: #000000;
+  --color-gold: var(--starscape-gold);
+  accent-color: var(--color-accent);
+  color-scheme: dark;
+}
+
+body {
+  background:
+    radial-gradient(circle at 82% 8%, rgba(168, 85, 247, 0.16), transparent 30rem),
+    radial-gradient(circle at 10% 90%, rgba(6, 182, 212, 0.12), transparent 34rem),
+    linear-gradient(135deg, #0a1121 0%, #10182e 48%, #0f3460 100%);
+  background-attachment: fixed;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background-image:
+    radial-gradient(circle, rgba(229, 237, 255, 0.42) 0 1px, transparent 1.6px),
+    linear-gradient(115deg, transparent 24%, rgba(229, 237, 255, 0.055) 43%, rgba(192, 132, 252, 0.08) 50%, rgba(56, 209, 235, 0.045) 58%, transparent 76%);
+  background-position: 0 0, center;
+  background-size: 78px 78px, cover;
+  opacity: 0.7;
+}
+
+.ui.card,
+.ui.cards > .card,
+.ui.segment,
+.ui.attached.segment,
+.repository.file.list,
+.repository #commits-table,
+.repository .diff-file-box {
+  border-color: rgba(6, 182, 212, 0.14);
+  box-shadow: 0 14px 42px rgba(0, 0, 0, 0.16);
+}
+
+.ui.menu,
+.ui.secondary.menu,
+.ui.dropdown .menu {
+  border-color: rgba(6, 182, 212, 0.12);
+}
+
+::selection {
+  background: rgba(6, 182, 212, 0.34) !important;
+  color: #ffffff !important;
+}
+
+strong.attention-important,
+svg.attention-important { color: var(--starscape-violet-bright); }
+strong.attention-note,
+svg.attention-note { color: var(--starscape-cyan-bright); }
+strong.attention-caution,
+svg.attention-caution { color: var(--starscape-pink); }
+
